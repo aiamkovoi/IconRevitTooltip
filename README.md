@@ -4,7 +4,8 @@ Shows Revit file version, build, worksharing, locale and save count on hover in 
 
 **Locale** (ENG/RUS/etc.) shows the language of Revit used when the file was last saved. Useful because system family and parameter names depend on the language version.
 
-![screenshot](image.png)
+![ezgif-6c0cb0cfb4774186](https://github.com/user-attachments/assets/7b07a245-2f73-43af-ad3b-0d226abc2f72)
+
 
 ## Install
 

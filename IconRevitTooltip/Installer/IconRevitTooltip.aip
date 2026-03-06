@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.1" version="22.1" PreviousModules="professional" Modules="enterprise" RootPath="." Language="en" Id="{0A686C80-0390-494C-BF40-C1C564C9F26C}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="ActSyncAppComponent;CPLAppletComponent;AutorunComponent;GameUxComponent;SilverlightSlnComponent;SharePointSlnComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_VERSION"/>
+    <ROW Property="AI_REQUIRED_DOTNET_DISPLAY" MultiBuildValue="DefaultBuild:4.7" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_VERSION" MultiBuildValue="DefaultBuild:4.7" ValueLocId="-"/>
+    <ROW Property="AI_ThemeStyle" Value="aero" MultiBuildValue="DefaultBuild:classic" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="Revit.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/Tereami/ShowRevitVersion/"/>
+    <ROW Property="Manufacturer" Value="Alexandr Zuyev"/>
+    <ROW Property="ProductCode" Value="1033:{A601C00A-FC5F-491A-817B-CDD7CB9C57D4} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="ShowRevitVersion"/>
+    <ROW Property="ProductVersion" Value="1.0.3" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{FB2DA234-CB05-4E89-83E4-0E8D613C9EB3}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{59224AA9-2A62-47E1-A31C-D6AF7F6A7569}"/>
+    <ROW Component="ProductInformation" Value="{E96D5182-BBA0-4785-91E5-CE376790EAB7}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{59224AA9-2A62-47E1-A31C-D6AF7F6A7569}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="Icon" ComponentId="{9A75D75C-73BF-4645-B928-D5BDC3A50E0F}" Directory_="APPDIR" Attributes="4" KeyPath="Icon"/>
+    <ROW Component="Icon_1" ComponentId="{D2C8A3F2-06B6-4E48-8E35-ACBD52E0307A}" Directory_="APPDIR" Attributes="4" KeyPath="Icon_1"/>
+    <ROW Component="Microsoft.Bcl.HashCode.dll" ComponentId="{6ADB84F8-336C-45CA-B4FC-CC1C6BC4B269}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Bcl.HashCode.dll"/>
+    <ROW Component="Microsoft.Bcl.HashCode.xml" ComponentId="{DAD55D32-DBEE-4501-BB68-960052CF652A}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Bcl.HashCode.xml" Type="0"/>
+    <ROW Component="OpenMcdf.dll" ComponentId="{F3368385-1E88-410E-BDAB-69C95931867E}" Directory_="APPDIR" Attributes="0" KeyPath="OpenMcdf.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{E96D5182-BBA0-4785-91E5-CE376790EAB7}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{B7F4E2DC-3C94-49D5-A831-43DA1AA18010}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="ShowRevitVersion.exe" ComponentId="{36C0F4D3-F93D-44CC-BFC5-052BB9BDC590}" Directory_="APPDIR" Attributes="0" KeyPath="ShowRevitVersion.exe"/>
+    <ROW Component="System.Buffers.dll" ComponentId="{48A2E559-68B6-4389-8A53-ECCC46CD6061}" Directory_="APPDIR" Attributes="0" KeyPath="System.Buffers.dll"/>
+    <ROW Component="System.Memory.dll" ComponentId="{17648CB4-8282-4B38-B75E-49A15BC29335}" Directory_="APPDIR" Attributes="0" KeyPath="System.Memory.dll"/>
+    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{DAE081DC-5712-4110-A8AE-EC8B58AC6CA5}" Directory_="APPDIR" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.Unsafe.dll" ComponentId="{FE413403-8DC9-4701-AB04-F104E27BD974}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Component="SystemFileAssociations" ComponentId="{B7FBC0D3-290D-4324-86E0-FCEB4B40AC4E}" Directory_="APPDIR" Attributes="4" KeyPath="SystemFileAssociations"/>
+    <ROW Component="_" ComponentId="{DAF4BE8C-9B99-44BA-815A-35172B7C38DE}" Directory_="APPDIR" Attributes="4" KeyPath="_"/>
+    <ROW Component="__1" ComponentId="{2E412B2F-297A-4CE4-BAEF-5ED2A9DFC694}" Directory_="APPDIR" Attributes="4" KeyPath="__1"/>
+    <ROW Component="__2" ComponentId="{A12D0837-3757-48AE-B1AC-15B5550123D2}" Directory_="APPDIR" Attributes="4" KeyPath="__2"/>
+    <ROW Component="__3" ComponentId="{BD0D97C9-4637-499F-8A55-85146E6DA671}" Directory_="APPDIR" Attributes="4" KeyPath="__3"/>
+    <ROW Component="rfa" ComponentId="{838DA9F0-0E80-417F-B821-5E9B4C41D906}" Directory_="APPDIR" Attributes="4" KeyPath="rfa"/>
+    <ROW Component="rvt" ComponentId="{948939DE-F63D-4B74-8E67-9349D7AD1B73}" Directory_="APPDIR" Attributes="4" KeyPath="rvt"/>
+    <ROW Component="shell" ComponentId="{E6849CA6-81C8-4316-8DC9-7914575ADF9B}" Directory_="APPDIR" Attributes="4" KeyPath="shell"/>
+    <ROW Component="shell_1" ComponentId="{68C940B6-DA50-497C-8657-62D469BE4B10}" Directory_="APPDIR" Attributes="4" KeyPath="shell_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Microsoft.Bcl.HashCode.dll" Component_="Microsoft.Bcl.HashCode.dll" FileName="MICROS~1.DLL|Microsoft.Bcl.HashCode.dll" Attributes="0" SourcePath="..\bin\Debug\Microsoft.Bcl.HashCode.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Bcl.HashCode.xml" Component_="Microsoft.Bcl.HashCode.xml" FileName="MICROS~1.XML|Microsoft.Bcl.HashCode.xml" Attributes="0" SourcePath="..\bin\Debug\Microsoft.Bcl.HashCode.xml" SelfReg="false"/>
+    <ROW File="OpenMcdf.dll" Component_="OpenMcdf.dll" FileName="OpenMcdf.dll" Attributes="0" SourcePath="..\bin\Debug\OpenMcdf.dll" SelfReg="false"/>
+    <ROW File="OpenMcdf.xml" Component_="Microsoft.Bcl.HashCode.xml" FileName="OpenMcdf.xml" Attributes="0" SourcePath="..\bin\Debug\OpenMcdf.xml" SelfReg="false"/>
+    <ROW File="Revit.ico" Component_="Microsoft.Bcl.HashCode.xml" FileName="Revit.ico" Attributes="0" SourcePath="..\bin\Debug\Revit.ico" SelfReg="false"/>
+    <ROW File="ShowRevitVersion.exe" Component_="ShowRevitVersion.exe" FileName="SHOWRE~1.EXE|ShowRevitVersion.exe" Attributes="0" SourcePath="..\bin\Debug\ShowRevitVersion.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ShowRevitVersion.exe.config" Component_="Microsoft.Bcl.HashCode.xml" FileName="SHOWRE~1.CON|ShowRevitVersion.exe.config" Attributes="0" SourcePath="..\bin\Debug\ShowRevitVersion.exe.config" SelfReg="false"/>
+    <ROW File="ShowRevitVersion.pdb" Component_="ShowRevitVersion.exe" FileName="SHOWRE~1.PDB|ShowRevitVersion.pdb" Attributes="0" SourcePath="..\bin\Debug\ShowRevitVersion.pdb" SelfReg="false"/>
+    <ROW File="System.Buffers.dll" Component_="System.Buffers.dll" FileName="SYSTEM~1.DLL|System.Buffers.dll" Attributes="0" SourcePath="..\bin\Debug\System.Buffers.dll" SelfReg="false"/>
+    <ROW File="System.Buffers.xml" Component_="Microsoft.Bcl.HashCode.xml" FileName="SYSTEM~1.XML|System.Buffers.xml" Attributes="0" SourcePath="..\bin\Debug\System.Buffers.xml" SelfReg="false"/>
+    <ROW File="System.Memory.dll" Component_="System.Memory.dll" FileName="SYSTEM~2.DLL|System.Memory.dll" Attributes="0" SourcePath="..\bin\Debug\System.Memory.dll" SelfReg="false"/>
+    <ROW File="System.Memory.xml" Component_="Microsoft.Bcl.HashCode.xml" FileName="SYSTEM~2.XML|System.Memory.xml" Attributes="0" SourcePath="..\bin\Debug\System.Memory.xml" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.dll" Component_="System.Numerics.Vectors.dll" FileName="SYSTEM~3.DLL|System.Numerics.Vectors.dll" Attributes="0" SourcePath="..\bin\Debug\System.Numerics.Vectors.dll" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.xml" Component_="Microsoft.Bcl.HashCode.xml" FileName="SYSTEM~3.XML|System.Numerics.Vectors.xml" Attributes="0" SourcePath="..\bin\Debug\System.Numerics.Vectors.xml" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.dll" Component_="System.Runtime.CompilerServices.Unsafe.dll" FileName="SYSTEM~4.DLL|System.Runtime.CompilerServices.Unsafe.dll" Attributes="0" SourcePath="..\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.xml" Component_="Microsoft.Bcl.HashCode.xml" FileName="SYSTEM~4.XML|System.Runtime.CompilerServices.Unsafe.xml" Attributes="0" SourcePath="..\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="251"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Setup Files" PackageFileName="Install [|ProductName]" Languages="en" InstallationType="4" ExtUI="true" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="ExitDialog" Control="Text_1" Type="Text" X="135" Y="105" Width="224" Height="15" Attributes="65539" Property="TEXT_1_PROP" Text="Right-click on an RVT or RFA file to display its version." Order="1300"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="EULA.en.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText_2" MsiKey="LicenseAgreementDlg#AgreementText"/>
+    <ROW Dialog_="WelcomeDlg" Control="Hyperlink_1" Type="Hyperlink" X="135" Y="130" Width="220" Height="11" Attributes="65539" Property="HYPERLINK_1_PROP" Text="&lt;a href=&quot;https://github.com/Tereami/ShowRevitVersion&quot;&gt;Source code (Github)&lt;/a&gt;" Order="800"/>
+    <ROW Dialog_="WelcomeDlg" Control="Hyperlink_2" Type="Hyperlink" X="135" Y="150" Width="220" Height="11" Attributes="65539" Property="HYPERLINK_2_PROP" Text="&lt;a href=&quot;https://github.com/Tereami/ShowRevitVersion/releases&quot;&gt;Download the latest version&lt;/a&gt;" Order="900"/>
+    <ROW Dialog_="WelcomeDlg" Control="Hyperlink_3" Type="Hyperlink" X="135" Y="170" Width="224" Height="11" Attributes="65539" Property="HYPERLINK_3_PROP" Text="&lt;a href=&quot;https://bim-starter.com/&quot;&gt;About the Bim-Starter Project&lt;/a&gt;" Order="1000"/>
+    <ROW Dialog_="WelcomeDlg" Control="Hyperlink_4" Type="Hyperlink" X="135" Y="190" Width="75" Height="11" Attributes="65539" Property="HYPERLINK_4_PROP" Text="&lt;a href=&quot;https://www.linkedin.com/in/aleksandr-zuev/&quot;&gt;Contact me&lt;/a&gt;" Order="1100"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Bcl.HashCode.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Bcl.HashCode.xml"/>
+    <ROW Feature_="MainFeature" Component_="OpenMcdf.dll"/>
+    <ROW Feature_="MainFeature" Component_="ShowRevitVersion.exe"/>
+    <ROW Feature_="MainFeature" Component_="System.Buffers.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Memory.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Numerics.Vectors.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="rvt"/>
+    <ROW Feature_="MainFeature" Component_="shell_1"/>
+    <ROW Feature_="MainFeature" Component_="SystemFileAssociations"/>
+    <ROW Feature_="MainFeature" Component_="_"/>
+    <ROW Feature_="MainFeature" Component_="Icon"/>
+    <ROW Feature_="MainFeature" Component_="__1"/>
+    <ROW Feature_="MainFeature" Component_="rfa"/>
+    <ROW Feature_="MainFeature" Component_="shell"/>
+    <ROW Feature_="MainFeature" Component_="__2"/>
+    <ROW Feature_="MainFeature" Component_="__3"/>
+    <ROW Feature_="MainFeature" Component_="Icon_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Revit.exe" SourcePath="..\bin\Debug\Revit.ico" Index="0"/>
+    <ROW Name="SystemFoldermsiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="URL" FileName="SOURCE~1.URL|Source code.url" DirProperty="SHORTCUTDIR" Section="InternetShortcut" Key="URL" Value="https://github.com/Tereami/ShowRevitVersion/" Action="0" Component_="Icon"/>
+    <ROW IniFile="URL_1" FileName="CONTAC~1.URL|Contact me.url" DirProperty="SHORTCUTDIR" Section="InternetShortcut" Key="URL" Value="https://www.linkedin.com/in/aleksandr-zuev/" Action="0" Component_="Icon"/>
+    <ROW IniFile="WorkingDirectory" FileName="SHORTC~1.URL|Shortcut to URL.url" DirProperty="SHORTCUTDIR" Section="InternetShortcut" Key="WorkingDirectory" Value="[SHORTCUTDIR]" Action="0" Component_="Icon"/>
+    <ROW IniFile="WorkingDirectory_1" FileName="CONTAC~1.URL|Contact me.url" DirProperty="SHORTCUTDIR" Section="InternetShortcut" Key="WorkingDirectory" Value="[SHORTCUTDIR]" Action="0" Component_="Icon"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="102"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_DOTNET_VERSION &gt;= AI_REQUIRED_DOTNET_VERSION" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_REQUIRED_DOTNET_DISPLAY]." DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Classes" Root="2" Key="Software\Classes" Name="\"/>
+    <ROW Registry="Icon" Root="2" Key="Software\Classes\SystemFileAssociations\.rvt\shell\RevitInfo" Name="Icon" Value="[#Revit.ico]" Component_="Icon"/>
+    <ROW Registry="Icon_1" Root="2" Key="Software\Classes\SystemFileAssociations\.rfa\shell\RevitInfo" Name="Icon" Value="[#Revit.ico]" Component_="Icon_1"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="RevitInfo" Root="2" Key="Software\Classes\SystemFileAssociations\.rfa\shell\RevitInfo" Name="\"/>
+    <ROW Registry="RevitInfo_1" Root="2" Key="Software\Classes\SystemFileAssociations\.rvt\shell\RevitInfo" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Software_2" Root="2" Key="Software" Name="\"/>
+    <ROW Registry="SystemFileAssociations" Root="2" Key="Software\Classes\SystemFileAssociations" Name="+" Component_="SystemFileAssociations"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="_" Root="2" Key="Software\Classes\SystemFileAssociations\.rvt\shell\RevitInfo" Value="Revit info" Component_="_"/>
+    <ROW Registry="__1" Root="2" Key="Software\Classes\SystemFileAssociations\.rvt\shell\RevitInfo\command" Value="&quot;[APPDIR]ShowRevitVersion.exe&quot; &quot;%1&quot;" Component_="__1"/>
+    <ROW Registry="__2" Root="2" Key="Software\Classes\SystemFileAssociations\.rfa\shell\RevitInfo" Value="Revit info" Component_="__2"/>
+    <ROW Registry="__3" Root="2" Key="Software\Classes\SystemFileAssociations\.rfa\shell\RevitInfo\command" Value="&quot;[APPDIR]ShowRevitVersion.exe&quot; &quot;%1&quot;" Component_="__3"/>
+    <ROW Registry="command" Root="2" Key="Software\Classes\SystemFileAssociations\.rfa\shell\RevitInfo\command" Name="\"/>
+    <ROW Registry="command_1" Root="2" Key="Software\Classes\SystemFileAssociations\.rvt\shell\RevitInfo\command" Name="\"/>
+    <ROW Registry="rfa" Root="2" Key="Software\Classes\SystemFileAssociations\.rfa" Name="+" Component_="rfa"/>
+    <ROW Registry="rvt" Root="2" Key="Software\Classes\SystemFileAssociations\.rvt" Name="+" Component_="rvt"/>
+    <ROW Registry="shell" Root="2" Key="Software\Classes\SystemFileAssociations\.rfa\shell" Name="+" Component_="shell"/>
+    <ROW Registry="shell_1" Root="2" Key="Software\Classes\SystemFileAssociations\.rvt\shell" Name="+" Component_="shell_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="ShowRevitVersion.exe" Directory_="SHORTCUTDIR" Name="SHOWRE~1.EXE|ShowRevitVersion.exe" Component_="ShowRevitVersion.exe" Target="[#ShowRevitVersion.exe]" Description="ShowRevitVersion.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="UninstallProductNameProductVersion" Directory_="SHORTCUTDIR" Name="UNINST~1.385|Uninstall [|ProductName] [|ProductVersion]" Component_="Icon" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="..\bin\Debug" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+  </COMPONENT>
+</DOCUMENT>

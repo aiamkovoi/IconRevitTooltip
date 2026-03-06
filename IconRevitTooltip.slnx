@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="IconRevitTooltip/IconRevitTooltip.csproj" Id="723e2d22-3a3e-41d5-a8a9-b9791ef42c0a" />
+  <Project Path="IconRevitTooltip.Core/IconRevitTooltip.Core.csproj" Id="834E2D22-4B4F-52E6-B9BA-C0802F053D1B" />
+  <Project Path="IconRevitTooltip.ShellExtension/IconRevitTooltip.ShellExtension.csproj" Id="945F3E33-5c50-63F7-CAEB-D19130164E2C" />
+</Solution>
